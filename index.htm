@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Gallo | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="Image_p36rz2p36rz2p36r.jpeg" alt="Sandy Gallo Logo" class="nav__logo-img">
+        </div>
+        <ul class="nav__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero__image">
+            <img src="1724130563900.jpeg" alt="Sandy Gallo" class="hero__photo">
+        </div>
+        <div class="hero__content">
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 class="hero__name">Sandy Gallo</h1>
+            <h2 class="hero__title">Web Developer</h2>
+            <p class="hero__tagline">I build clean, performant, and accessible web experiences.</p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <div class="hero__scroll">
+                    <div class="hero__scroll-line"></div>
+                    <span>Scroll Down</span>
+                </div>
+                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section__header">
+            <h2 class="section__title">About Me</h2>
+            <div class="section__divider"></div>
+        </div>
+        <div class="about__content">
+            <div class="about__text">
+                <p>
+                    I'm a passionate web developer with a love for crafting beautiful, functional websites. 
+                    With a focus on clean code and great user experiences, I bring ideas to life through modern web technologies.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                    or continuously learning to stay ahead in the ever-evolving web landscape.
+                </p>
+                <p>
+                    I believe that great software is built at the intersection of design and engineering — 
+                    where aesthetics meet performance and accessibility.
+                </p>
+            </div>
+            <div class="about__highlights">
+                <div class="highlight-card">
+                    <span class="highlight-card__number">3+</span>
+                    <span class="highlight-card__label">Years Experience</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-card__number">20+</span>
+                    <span class="highlight-card__label">Projects Completed</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="highlight-card__number">10+</span>
+                    <span class="highlight-card__label">Happy Clients</span>
+                </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="section__header">
+            <h2 class="section__title">Skills & Technologies</h2>
+            <div class="section__divider"></div>
+        </div>
+        <div class="skills__grid">
+            <div class="skill-card">
+                <div class="skill-card__icon">🎨</div>
+                <h3 class="skill-card__title">Frontend</h3>
+                <p class="skill-card__desc">HTML5, CSS3, JavaScript, React, Vue, Tailwind CSS</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card__icon">⚙️</div>
+                <h3 class="skill-card__title">Backend</h3>
+                <p class="skill-card__desc">Node.js, Python, Express, REST APIs, GraphQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card__icon">🗄️</div>
+                <h3 class="skill-card__title">Database</h3>
+                <p class="skill-card__desc">PostgreSQL, MongoDB, Redis, Firebase</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card__icon">🛠️</div>
+                <h3 class="skill-card__title">Tools</h3>
+                <p class="skill-card__desc">Git, Docker, CI/CD, AWS, Figma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="section__header">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="section__divider"></div>
+        </div>
+        <div class="projects__grid">
+            <article class="project-card">
+                <div class="project-card__image">
+                    <div class="project-card__placeholder">📱</div>
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project One</h3>
+                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link">Live Demo →</a>
+                        <a href="#" class="project-card__link">Source Code →</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__image">
+                    <div class="project-card__placeholder">🛒</div>
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project Two</h3>
+                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Vue</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link">Live Demo →</a>
+                        <a href="#" class="project-card__link">Source Code →</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card__image">
+                    <div class="project-card__placeholder">📊</div>
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project Three</h3>
+                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="project-card__link">Live Demo →</a>
+                        <a href="#" class="project-card__link">Source Code →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section__header">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="section__divider"></div>
+        </div>
+        <div class="contact__content">
+            <p class="contact__text">
+                I'm currently open to new opportunities and collaborations. 
+                Whether you have a project in mind or just want to say hello, feel free to reach out!
+            </p>
+            <div class="contact__links">
+                <a href="mailto:sandy@example.com" class="contact__item">
+                    <span class="contact__icon">✉️</span>
+                    <span>sandy@example.com</span>
+                </a>
+                <a href="https://github.com/" target="_blank" class="contact__item">
+                    <span class="contact__icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="contact__item">
+                    <span class="contact__icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="contact__item">
+                    <span class="contact__icon">🐦</span>
+                    <span>Twitter</span>
+                </a>
+            </div>
+            <a href="mailto:sandy@example.com" class="btn btn--primary btn--large">Say Hello</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Sandy Gallo. Built with ❤️ and clean code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
