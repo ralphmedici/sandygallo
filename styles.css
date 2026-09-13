@@ -479,6 +479,71 @@ img {
     justify-content: center;
 }
 
+.projects__grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.projects__grid--two .project-card--feature {
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__grid--two .project-card--feature .project-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__grid--two .project-card--feature .project-card__meta {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.projects__grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.projects__grid--three .project-card--feature {
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__grid--three .project-card--feature .project-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+}
+
+.projects__grid--three .project-card--feature .project-card__meta {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__grid--three .project-card__tags {
+    justify-content: center;
+}
+
+.project-card__banner--travel {
+    background: linear-gradient(135deg, #3b1d5e 0%, #8b2f5c 50%, #e07b39 100%);
+}
+
+.project-card__banner--afro {
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a3a 50%, #6c63ff 100%);
+}
+
 .project-card {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -694,6 +759,13 @@ img {
 }
 
 /* ===== Responsive ===== */
+@media (max-width: 1024px) {
+    .projects__grid--three {
+        grid-template-columns: 1fr;
+        max-width: 640px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav__links {
         gap: 1rem;
@@ -713,6 +785,11 @@ img {
 
     .about__highlights {
         grid-template-columns: 1fr;
+    }
+
+    .projects__grid--two {
+        grid-template-columns: 1fr;
+        max-width: 640px;
     }
 
     .project-card--feature .project-card__content {
