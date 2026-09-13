@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandy Gallo | Web Developer</title>
+    <title>Sandy Gallo | Websites for Green Builders & HVAC Pros</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,10 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav__logo">
-            <img src="Image_p36rz2p36rz2p36r.jpeg" alt="Sandy Gallo Logo" class="nav__logo-img">
+            <img src="Image_p36rz2p36rz2p36r.jpg" alt="Sandy Gallo Logo" class="nav__logo-img">
         </div>
         <ul class="nav__links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -26,13 +25,18 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero__image">
-            <img src="1724130563900.jpeg" alt="Sandy Gallo" class="hero__photo">
+            <img src="1724130563900.jpg" alt="Sandy Gallo" class="hero__photo">
         </div>
         <div class="hero__content">
             <p class="hero__greeting">Hello, I'm</p>
             <h1 class="hero__name">Sandy Gallo</h1>
-            <h2 class="hero__title">Web Developer</h2>
-            <p class="hero__tagline">I build clean, performant, and accessible web experiences.</p>
+            <h2 class="hero__title">I build websites for green builders &amp; HVAC pros</h2>
+            <p class="hero__tagline">Fast, clean, high-converting sites for energy modelers, HVAC designers, and sustainable construction companies — so you win more bids and look as professional as your work.</p>
+            <div class="hero__badges">
+                <span class="hero__badge">🌱 Green Building</span>
+                <span class="hero__badge">❄️ HVAC &amp; Energy Modeling</span>
+                <span class="hero__badge">🏗️ Construction</span>
+            </div>
             <div class="hero__actions">
                 <a href="#projects" class="btn btn--primary">View My Work</a>
                 <div class="hero__scroll">
@@ -47,23 +51,25 @@
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="section__header">
-            <h2 class="section__title">About Me</h2>
+            <h2 class="section__title">Websites that win green building work</h2>
             <div class="section__divider"></div>
+            <p class="section__subtitle">I help HVAC, energy modeling, and sustainable construction companies turn their expertise into clients.</p>
         </div>
-        <div class="about__content">
-            <div class="about__text">
-                <p>
-                    I'm a passionate web developer with a love for crafting beautiful, functional websites. 
-                    With a focus on clean code and great user experiences, I bring ideas to life through modern web technologies.
+        <div class="about__card">
+            <div class="about__card-glow"></div>
+            <div class="about__bio">
+                <p class="about__lead">
+                    I'm Sandy Gallo — a web developer focused on one niche: <strong>green building &amp; construction companies</strong> like Elite Climate Design.
                 </p>
                 <p>
-                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                    or continuously learning to stay ahead in the ever-evolving web landscape.
+                    Most contractors are great at the work but invisible online. I fix that with fast, mobile-friendly websites
+                    that explain your services clearly, build trust with homeowners &amp; builders, and make it easy to request a quote.
                 </p>
-                <p>
-                    I believe that great software is built at the intersection of design and engineering — 
-                    where aesthetics meet performance and accessibility.
-                </p>
+                <ul class="about__points">
+                    <li><span>✅</span> Industry language done right — HERS, Manual J, energy modeling, code compliance</li>
+                    <li><span>✅</span> Local SEO foundations so nearby clients actually find you</li>
+                    <li><span>✅</span> Quote-ready calls-to-action on every page</li>
+                </ul>
             </div>
             <div class="about__highlights">
                 <div class="highlight-card">
@@ -78,136 +84,66 @@
                     <span class="highlight-card__number">10+</span>
                     <span class="highlight-card__label">Happy Clients</span>
                 </div>
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="section__header">
-            <h2 class="section__title">Skills & Technologies</h2>
-            <div class="section__divider"></div>
-        </div>
-        <div class="skills__grid">
-            <div class="skill-card">
-                <div class="skill-card__icon">🎨</div>
-                <h3 class="skill-card__title">Frontend</h3>
-                <p class="skill-card__desc">HTML5, CSS3, JavaScript, React, Vue, Tailwind CSS</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card__icon">⚙️</div>
-                <h3 class="skill-card__title">Backend</h3>
-                <p class="skill-card__desc">Node.js, Python, Express, REST APIs, GraphQL</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card__icon">🗄️</div>
-                <h3 class="skill-card__title">Database</h3>
-                <p class="skill-card__desc">PostgreSQL, MongoDB, Redis, Firebase</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card__icon">🛠️</div>
-                <h3 class="skill-card__title">Tools</h3>
-                <p class="skill-card__desc">Git, Docker, CI/CD, AWS, Figma</p>
+                <div class="highlight-card highlight-card--stack highlight-card--frontend">
+                    <span class="highlight-card__icon">🎨</span>
+                    <span class="highlight-card__label">Frontend</span>
+                    <span class="highlight-card__tech">HTML5 · CSS3 · JavaScript · React · Vue · Tailwind</span>
+                </div>
+                <div class="highlight-card highlight-card--stack highlight-card--backend">
+                    <span class="highlight-card__icon">⚙️</span>
+                    <span class="highlight-card__label">Backend</span>
+                    <span class="highlight-card__tech">Node.js · Python · Express · REST · GraphQL</span>
+                </div>
+                <div class="highlight-card highlight-card--stack highlight-card--data">
+                    <span class="highlight-card__icon">🗄️</span>
+                    <span class="highlight-card__label">Database</span>
+                    <span class="highlight-card__tech">PostgreSQL · MongoDB · Redis · Firebase</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section projects projects--compact">
         <div class="section__header">
-            <h2 class="section__title">Featured Projects</h2>
+            <h2 class="section__title">Featured Project</h2>
             <div class="section__divider"></div>
         </div>
-        <div class="projects__grid">
-            <article class="project-card">
-                <div class="project-card__image">
-                    <div class="project-card__placeholder">📱</div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project One</h3>
-                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
-                    <div class="project-card__tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="project-card__link">Live Demo →</a>
-                        <a href="#" class="project-card__link">Source Code →</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card__image">
-                    <div class="project-card__placeholder">🛒</div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project Two</h3>
-                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
-                    <div class="project-card__tags">
-                        <span class="tag">Vue</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="project-card__link">Live Demo →</a>
-                        <a href="#" class="project-card__link">Source Code →</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-card__image">
-                    <div class="project-card__placeholder">📊</div>
-                </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project Three</h3>
-                    <p class="project-card__desc">A brief description of this project. What problem does it solve and what technologies were used.</p>
-                    <div class="project-card__tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Tailwind</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="project-card__link">Live Demo →</a>
-                        <a href="#" class="project-card__link">Source Code →</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="section__header">
-            <h2 class="section__title">Get In Touch</h2>
-            <div class="section__divider"></div>
-        </div>
-        <div class="contact__content">
-            <p class="contact__text">
-                I'm currently open to new opportunities and collaborations. 
-                Whether you have a project in mind or just want to say hello, feel free to reach out!
-            </p>
-            <div class="contact__links">
-                <a href="mailto:sandy@example.com" class="contact__item">
-                    <span class="contact__icon">✉️</span>
-                    <span>sandy@example.com</span>
-                </a>
-                <a href="https://github.com/" target="_blank" class="contact__item">
-                    <span class="contact__icon">🐙</span>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com/" target="_blank" class="contact__item">
-                    <span class="contact__icon">💼</span>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com/" target="_blank" class="contact__item">
-                    <span class="contact__icon">🐦</span>
-                    <span>Twitter</span>
-                </a>
+        <article class="project-card project-card--feature">
+            <div class="project-card__banner">
+                <span class="project-card__emoji">❄️</span>
+                <span class="project-card__site">eliteclimatedesign.com</span>
             </div>
-            <a href="mailto:sandy@example.com" class="btn btn--primary btn--large">Say Hello</a>
-        </div>
+            <div class="project-card__content">
+                <h3 class="project-card__title">Elite Climate Design</h3>
+                <p class="project-card__desc">HVAC design &amp; energy modeling site I built — custom system design, energy modeling &amp; code compliance pages that turn visitors into quote requests.</p>
+                <div class="project-card__meta">
+                    <div class="project-card__tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="https://www.eliteclimatedesign.com" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Visit Live Site →</a>
+                </div>
+            </div>
+        </article>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Sandy Gallo. Built with ❤️ and clean code.</p>
+    <!-- Contact / Footer Combined -->
+    <footer id="contact" class="footer-contact">
+        <div class="footer-contact__inner">
+            <div class="footer-contact__cta">
+                <h2 class="footer-contact__title">Need a site that wins green building clients?</h2>
+                <a href="mailto:sandy@example.com" class="btn btn--primary">Get a Quote</a>
+            </div>
+            <div class="footer-contact__links">
+                <a href="mailto:sandy@example.com">✉️ sandy@example.com</a>
+                <span class="footer-contact__sep">·</span>
+                <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+                <span class="footer-contact__sep">·</span>
+                <span>&copy; 2026 Sandy Gallo</span>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
